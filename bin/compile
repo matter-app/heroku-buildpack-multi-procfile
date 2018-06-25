@@ -17,6 +17,10 @@ fi
 
 cp ${BUILD_DIR}/${PROCFILE} ${BUILD_DIR}/Procfile
 
+echo ${BUILD_DIR}
+echo ${BUILD_DIR}/${PROCFILE}
+echo ${BUILD_DIR}/Procfile
+
 if ! [ $? ]; then
     echo "FAILED to copy a Procfile" | indent
     exit 1
